@@ -1,0 +1,227 @@
+/* Main Layout Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Raleway', 'sans-serif';
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Josefin Slab', 'serif';
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #800080;
+  font-weight: 700;
+  border: solid 2px #800080;
+  transition: border 5s;
+}
+
+
+/* Header */
+
+.main-header {
+  background-color: #ffe6ff;
+  padding: 10px;
+  margin: 0;  
+}
+
+.name {
+  color: #800080;
+}
+
+.profile-image {
+  border-radius: 100%;
+  margin: 40px 0 10px 0;
+  box-shadow: 0 0 50px #800080;
+  width: 200px;
+}
+
+/* Navigation */
+
+.nav li {
+  background-color: #ffffcc;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+/* Main Content */
+
+.gallery li {
+  margin-bottom: 20px;
+}
+
+.gallery h3 {
+  font-size: 1.25em;
+}
+
+.gallery p {
+  font-size: .9em;
+  padding: 0 10px;
+}
+
+.sec,
+footer {
+  background-color: #ffe6ff;
+  padding: 10px;
+  margin: 0; 
+}
+
+#skills {
+  margin-top: 40px;
+  border-top: solid 2px #800080;
+}
+
+.footer-nav {
+  visibility: hidden;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 2px #800080;  
+}
+
+/* Designs for Larger Screens */
+
+@media screen and (min-width: 768px) {
+
+  .main-header {
+    padding: 30px 0;
+  }
+  
+  .nav,
+  .header,
+  .gallery,
+  footer,
+  .footer-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .header {
+    flex-direction: row-reverse;
+  }
+  
+  .nav li {
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  .header p {
+    max-width: 60%;
+  }
+  
+  .gallery {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .gallery li {
+    max-width: 45%;
+  }
+  
+  #contact p {
+    padding: 0 40px;
+  }
+  
+  .skills-list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .skills-list li {
+    padding: 0 10px;
+    margin: 0 10px 20px 10px;
+    background: #ffffcc;
+    border-radius: 5px;
+  }
+  
+  #bottom {
+    display: none;
+  }
+  
+  footer {
+    flex-direction: row;
+    justify-content: space-between; 
+  } 
+  
+  .footer-name {
+    margin-right: auto;
+  }
+
+  .footer-nav {
+    visibility: visible;
+  }
+  
+  .footer-nav li {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  body {
+    font-size: 1.25em;
+  }
+  
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav li {
+    padding: 0 20px;
+  }
+  
+  .name {
+    margin-left: 40px;
+    margin-right: auto;
+  }
+    
+  .header {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .header p {
+    text-align: left;
+    padding-left: 40px;
+  }
+  
+  .profile-image {
+    width: 400px;
+    margin-right: 80px;
+  }
+
+  .gallery li {
+    max-width: 30%;
+  }
+  
+  #contact {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  
+
+}
